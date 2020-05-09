@@ -1,10 +1,6 @@
-const {Pool } = require("pg")
+const knexfile = require ('../knexfile')
+const knex = require('knex')(knexfile['development'])
 
-module.exports = new Pool({
-    user:'pedro',
-    password:"980705",
-    host:"localhost",
-    port:5432,
-    database:"innkasa"
+module.exports =knex
 
-})
+
