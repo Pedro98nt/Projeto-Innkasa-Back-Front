@@ -2,8 +2,11 @@ const express = require('express')
 const routes = express.Router()
 const pagina = require('./pagina')
 
-
 routes.get('/', function(req,res){
+    return res.render("login")
+})
+
+routes.get('/pagina', function(req,res){
     return res.render("pagina")
 })
 
@@ -18,7 +21,7 @@ routes.get('/inscricao', function(req,res){
     return res.render("inscricao")
 })
 
-routes.post("/pagina", )
+routes.post("/", pagina.post)
 
 routes.post("/quartos", function(req,res){
     return res.send(req.body)
