@@ -12,6 +12,9 @@ module.exports = {
     migrations:{
       tableName:'innkasa',
       directory:`${ __dirname }/config/db/migrations`
+    },
+    seeds:{
+      directory:`${ __dirname }/config/db/seeds`
     }
   }
 };
