@@ -1,7 +1,13 @@
-const fs = require('fs')
+
 const data = require("./data.json")
 
-//create
+const pagina = function(req,res){
+
+}
+module.exports={
+    
+}
+
 exports.post =  function(req,res){
         const Keys = Object.keys(req.body)
        

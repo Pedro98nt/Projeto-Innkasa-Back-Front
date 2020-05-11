@@ -36,4 +36,6 @@ routes.post("/inscricao", function(req,res){
 })
 
 
+
+
 module.exports = routes
