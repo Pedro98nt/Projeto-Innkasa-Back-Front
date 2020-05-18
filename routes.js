@@ -25,7 +25,12 @@ routes.post("/login", function(req,res){
     return res.send(req.body)
 })
 
+routes.post("/pagina", function(req,res){
+    return res.send(req.body)
+})
+
 routes.post("/quartos", function(req,res){
+    console.log(req.body.name)
     return res.send(req.body)
 })
 
