@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 
 const server = express()
 
-server.use(bodyParser.urlencoded({extended:true}))
+server.use(bodyParser.urlencoded({extended:false}))
 server.use(bodyParser.json())
 server.use(express.urlencoded({extended:true}))
 server.use(express.json())
@@ -17,7 +17,7 @@ server.use(routes)
 
 
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views",{
     autoescape:false,

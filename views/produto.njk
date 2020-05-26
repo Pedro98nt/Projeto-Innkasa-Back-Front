@@ -1,0 +1,178 @@
+{% extends "layout.njk" %}
+{% block content %}
+
+</div>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow" >
+  <a class="nav-link" href="/pagina" class="navbar-brand">
+    <img src="innKasa2.png" alt="InnKasa">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/quartos">Quartos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/inscricao">Inscrição</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/relatorio">Relatorio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <!--  Inn -->
+
+  <section class="container">
+    <div class="text-center my-5">
+      <h1 class="display-4 text-primary">Escolha os Produtos</h1>
+    </div>
+
+     <!--ADEGA-->
+      
+     <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+<blockquote class="spoil"><div><h4 onclick="pchild=this.parentNode.getElementsByClassName('punmob_spoil'); 
+if(pchild[1].style.display!='none'){pchild[1].style.display='none'; pchild[1].style.height='0';}
+else{pchild[1].style.display=''; pchild[1].style.height='';}" 
+class="punmob_spoil"><span>ADEGA</span></h4>
+<span class="punmob_spoil" style="display: none; height: 0px;">
+    <blockquote class="quote"><div><span class="punmob_quote">
+        
+        <form method="POST"  id="horns">
+        <div>
+          <input type="checkbox" id="horns" name="adega">
+          <label for="adega">Vinho Tinto</label>
+        </div>
+        <div>
+            <input type="checkbox" id="horns" name="adega">
+            <label for="adega">Vinho Branco</label>
+          </div>
+
+</form>
+    </div></blockquote></span></div></blockquote>
+    </div></div>
+
+
+     <!--PRATOS-->
+
+     <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+
+    <blockquote class="spoil"><div><h4 onclick="pchild=this.parentNode.getElementsByClassName('punmob_spoil'); 
+        if(pchild[1].style.display!='none'){pchild[1].style.display='none'; pchild[1].style.height='0';}
+        else{pchild[1].style.display=''; pchild[1].style.height='';}" 
+        class="punmob_spoil"><span>PRATOS</span></h4>
+        <span class="punmob_spoil" style="display: none; height: 0px;">
+            <blockquote class="quote"><div><span class="punmob_quote">
+<form method="POST"  id="horns">
+                <div>
+                  <input type="checkbox" id="horns" name="pratos">
+                  <label for="pratos">Feijoada</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="horns" name="pratos">
+                    <label for="pratos">Moqueca</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="horns" name="pratos">
+                    <label for="pratos">Tapioca</label>
+                  </div>
+        </form>
+        
+            </div></blockquote></span></div></blockquote>
+
+            </div> </div>
+
+            <!--FRIGOBAR-->
+
+            <div class="col-md mb-5">
+                <div class="bg-light rounded p-4 box-shadow">
+
+            <blockquote class="spoil"><div><h4 onclick="pchild=this.parentNode.getElementsByClassName('punmob_spoil'); 
+                if(pchild[1].style.display!='none'){pchild[1].style.display='none'; pchild[1].style.height='0';}
+                else{pchild[1].style.display=''; pchild[1].style.height='';}" 
+                class="punmob_spoil"><span>FRIGOBAR</span></h4>
+                <span class="punmob_spoil" style="display: none; height: 0px;">
+                    <blockquote class="quote"><div><span class="punmob_quote">
+                
+                <form method="POST"  id="horns">
+                        <div>
+                          <input type="checkbox" id="horns" name="frigobar">
+                          <label for="frigobar">Água 200ml</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="horns" name="frigobar">
+                            <label for="frigobar">Refrigerante lata</label>
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="horns" name="frigobar">
+                            <label for="frigobar">Chocolate </label>    
+                          </div>
+                          </form>
+
+                    </div></blockquote></span></div></blockquote>
+
+                    </div></div>
+
+                    
+                    <a href="/quarto"> <button class="btn btn-primary btn-lg">Adicionar </button> </a>
+
+
+</div>
+</section>
+
+    <!--  Footer  -->
+
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <h4 class="h6">PÁGINAS</h4>
+              <ul class="list-unstyled">
+                <li><a href="/pagina">Pagina inicial</a></li>
+                <li><a href="/inscricao">Inscreva-se</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4 class="h6">DADOS DE CONTATO</h4>
+              <ul class="list-unstyled text-secondary">
+                <li>InnKasa@InnKasa.com.br</li>
+                <li>21 99999-9999</li>
+                <li>De Seg. à Sex. das 8h às 18h</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4 class="h6">REDES SOCIAIS</h4>
+              <ul class="list-unstyled">
+                <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+                <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+                <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+          <p class="mb-0">InnKasa © 2020. Alguns direitos reservados.</p>
+        </div>
+      </footer>
+    
+      
+      <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+   
+      {% endblock %}

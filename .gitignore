@@ -1,1 +1,10 @@
 node_modules
+exports.show = function(req,res){
+     const{id}= req.params
+
+     const foundLogin = data.login.find(function(login){
+         return login .id == id
+      })
+
+     if(!foundLogin) return res.send("login not found")
+}

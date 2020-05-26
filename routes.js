@@ -2,6 +2,7 @@ const express = require('express')
 const routes = express.Router()
 const quartos = require('./quartos')
 const pagina = require('./pagina')
+const login = require('./login')
 
 
 routes.get('/', function (req, res) {
@@ -16,6 +17,11 @@ routes.get('/quartos', function (req, res) {
     return res.render("quartos")
 })
 
+
+routes.get('/produto', function(req,res){
+    return res.render("produto")
+})
+
 routes.get('/relatorio', function (req, res) {
     return res.render("relatorio")
 })
@@ -23,9 +29,9 @@ routes.get('/inscricao', function (req, res) {
     return res.render("inscricao")
 })
 
-routes.post("/login", function (req, res) {
-    return res.send(req.body)
-})
+//routes.get('/login/:id', login.show )
+
+routes.post("/login", login.post)
 
 routes.post("/pagina", pagina.post)
 
@@ -36,7 +42,9 @@ routes.post("/relatorio", function (req, res) {
 })
 
 routes.post("/inscricao", function (req, res) {
-    return res.send(req.body)
+    return res.push(req.body)
+    res.json({ status: 'User created successfully!' })
+    
 })
 
 
